@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite Demo]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="D:\Automation_Java_workspace\AutomationDemo_1\src\tests(failed)">
+    <groups>
+      <run>
+        <include name="suiteone"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="VerifyErrorMessageIfLoginWithInvalidCreds"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.HTMLTests">
+        <methods>
+          <include name="VerifyThatCanClickOnHomeButton"/>
+          <include name="VerifyThatCanClickOnHomeButton_2"/>
+        </methods>
+      </class> <!-- tests.HTMLTests -->
+    </classes>
+  </test> <!-- D:\Automation_Java_workspace\AutomationDemo_1\src\tests(failed) -->
+</suite> <!-- Failed suite [Suite Demo] -->
